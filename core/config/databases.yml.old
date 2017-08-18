@@ -1,0 +1,12 @@
+  
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:dbname=mytick;host=localhost'
+      profiler: false
+      username: mytick
+      password: "<?php echo urlencode('mytick') ; ?>"
+      attributes:
+        quote_identifier: true  
+  
